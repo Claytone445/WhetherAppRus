@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900?landscape');
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: #fff;
+    padding: 2em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -ms-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em  ;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 80px);
+}
+
+h1.temperature {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-top: 5px;
+}
+
+.wind {
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.weather .loading {
+visibility: hidden;
+max-height: 20px;
+position: relative;
+}
+
+.weather .loading::after {
+    visibility: visible;
+    content: 'Загрузка...';
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
